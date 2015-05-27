@@ -13,5 +13,8 @@ BOT_NAME = 'isach_info'
 SPIDER_MODULES = ['isach_info.spiders']
 NEWSPIDER_MODULE = 'isach_info.spiders'
 
+ITEM_PIPELINES = ['isach_info.pipelines.CustomImagesPipeline']
+IMAGES_STORE = "/Users/stevenvo/Downloads/isach.info-downloaded-jpegs"
+
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'isach_info (+http://www.yourdomain.com)'
